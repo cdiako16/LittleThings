@@ -8,7 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-#Things about Little Trees :)
+###Things about Little Trees :)
 
 ```{r}
 data(trees)
@@ -16,7 +16,8 @@ head(trees)
 dim(trees)
 ```
 
-#Just plotting using my little base
-```{r}
-plot(trees$Girth,trees$Height)
+###Graph
+```{r,warning=FALSE}
+library(ggplot2)
+ggplot(trees, aes(x=Girth, y=Height)) + geom_point()
 ```
