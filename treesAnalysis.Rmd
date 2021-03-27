@@ -1,0 +1,22 @@
+---
+title: "Little Trees"
+author: "Diako"
+date: "28 March 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#Things about Little Trees :)
+
+```{r}
+data(trees)
+head(trees)
+dim(trees)
+```
+
+#Just plotting using my little base
+```{r}
+plot(trees$Girth,trees$Height)
+```
