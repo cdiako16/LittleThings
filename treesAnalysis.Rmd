@@ -21,3 +21,5 @@ dim(trees)
 library(ggplot2)
 ggplot(trees, aes(x=Girth, y=Height)) + geom_point()
 ```
+
+Other graphs can also be plotted using this same data.
